@@ -1,3 +1,7 @@
+language: generic
+
+sudo: required
+
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y texlive-latex-recommended texlive-latex-extra latex2html 
