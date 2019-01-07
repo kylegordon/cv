@@ -4,8 +4,16 @@ sudo: required
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install -y texlive-latex-recommended texlive-latex-extra latex2html 
-  - sudo apt-get install -y build-essential 
+  - sudo apt-get install -y texlive-latex-recommended texlive-latex-extra latex2html
+  - sudo apt-get install -y build-essential
 
 script:
   - make
+
+deploy:
+  provider: releases
+  api_key:
+    secure: c8dywSk8QporwQwDhaZlM27ox6vGfMW409C7/kE+bk5XG7nhpbyLYXQM9q//jjVAV6AAaEV1utyGVS+6Vcrz20D5L4tvpUAra9bBvE+osmqW+ZnoqvPWSmSnl5sgrQ4pWUqwXEFHJb85QgMGrd0rf3ShzWv5JSSSTBXsWrvmtCSheGCPH1QANTgu/FwA1ECm8KvxGAQcH8b6eXSXYcHMZ4f5R9CFM4U5eAcb6tjxvDTrLc1vjkjbMVqMpVtz68w91/yf2CHSLC1qsyy/UIRdAF471ElMYe56sosAAk3PSXSg7BDeE2roBkcZ4RGdRbX32cDA9Ar/kyscICm4aYFA8LXPIbkQ80Ewmy2+6sCXvQG2Yk+ZwHTFJhLAndAUYGd2w1nV2t9wVqm6NzbYu82W5TUCoVvwlP38AVX1GapEf1k0+rw2PxIMhOfd6C6/gASOb/j1YS2104nddp1kHPnWkOwnoFm7FUUIK3kM+vccsTrGrL3ncm8DMYRZxF/A5aZFhw+SBMB26Giu7TWet+cyKn+QcLegZuqYI/yF3DCzVSA9NPhv9OLlxtRd83s8Tfq7s273YCgdguzxuva1ScRPf/o7jRENnpiCEmpfxtCe2Vu8JAPA6YrkfBT3cPC/+rm8eWtpPm3LGtdc3XIQwqgrIZKnV2imd/VhirA4UCfDlpQ=
+  file: cv.pdf
+  on:
+    repo: kylegordon/cv
