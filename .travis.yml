@@ -16,4 +16,5 @@ deploy:
     secure: Ozdfhuo7nwLhKWU9lebd8izgAdwJaXQFJ0Zld9k3iwMHDcbFC8Xsqync1lBW0oCAKDvPgLDRmhryFROUnOqAyN7zph0YVQRmyuTTp7dG7MY1KPqLBp73xXjNTBXX6HXY4Ml8FhPcfWHOu9KOAXxZzxy6O5zDrklSULGaTOufuIuI1HELCFsFr1/ELHHUsBT+UPqFlAWOT25oHStb5ssBI2iFAHpBzdpbam5sZTAYsyTpNBbDxh/z87SB5J7ZNE2Xys71dBEiUy9Mb9z9XOR922OgbzbMalpqS4O3HAbae1cx//XLz+HOGvSsnr6/dqVoEif4pwf/iSTR1XjxXsXdtmh2LidS55sKPwi9lKL5Fvt2atxY3Dx9EtFtLScqDQT7FVgGJDgYlmEiITm4CuQBEOrJ4tCOTnXalMrhj7lbBE7u/oxPy1E1t5MTw+xZvtkk8Cr89Y4YDrm8axHbZ0E+12LZk1ZSvHszFpr7zC79l/Y1HCnoUiAJcmB+O75N1hNBzzcGgKorHR2IEyG4wA7niMN4S4PPdTvVFI6wVIX6JxI+nMn8Zg1ukGojNMFjOf1YHai2jvhxW/RfFXOdQbbD/yp4B5M/Elj+bhiFK1WW75Y8a/OTML3Dv4hzbdW+wDfLCdDPJbSZkDDOn57xDjWTl5D+v3uyDIY0Refz0mitNO4=
   file: "cv.pdf"
   on:
-    tags: true
+    repo: kylegordon/cv
+    branch: master
