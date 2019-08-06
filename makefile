@@ -17,3 +17,5 @@ upload:
 	scp *.* bagpuss@lodge.glasgownet.com:www/sites/lodge.glasgownet.com/cv_files/
 	scp output/* bagpuss@lodge.glasgownet.com:www/sites/lodge.glasgownet.com/cv_files/
 
+clean:
+	rm -vrf output
