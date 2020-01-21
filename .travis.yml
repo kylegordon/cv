@@ -14,6 +14,7 @@ deploy:
   provider: releases
   api_key:
     secure: C0GI0Ilz8QnEKghly/dLXRiRbmwenzypz39LCgftfaKEX07NsfyZUU+8ce7fJ695gHzci1YnfClMUORfoqov4COHKnpDUdjMyF8tUWSiYxvJannIG/M6+WJzEiX4cz+SOe546OdPE6N4WbSwu7VRRtM5PgRriTYMtjw2KwAoee43If4rDZZiRBw76f7qZO61cnpkWLHS3f0NnUpPzg69iLrMeLgVhxwSNKBtUOkWpXZfJyrw2qYhbrWPPluH+RKWdHWezkTRlK1OKpnRC7qvo5sjGlPhQw+ZFZcjfYHg6CEG4E5UrWBkGtuYHp2l3E9D0N9wN1UMkKzV2/vZ93zGFffV2HAGy2GiPQkypz6VddsGxNLBGscPjnAhnX8+mZrZXyyluhy2WIiAP+GMFUrUa10qzSUEO+MJl4p4z/YaUrSmSX8mCGs5F6ZQDUe8b7aA4zeuW7BHo3VEhbeZBh00ZNooirm7rb8sPOU+bBD69kCj2+xT+jmmOCYflXefiu/YxBH6QlODrTuMxBBg70KTIHw+9cT3hrWrfUYsIzPBVlZ6zaz61erbq4hU4dyyh2/eLO5Cnv/lke1Dwt5a8pykHUDP1ndSH30lPIqKNnQJFdZA6dNcP0TFhAw+Be6ofHJuieh9pH6wlGzaRe10IxZVGPcTLaW581Xm4ceP1ERbRMM=
-  file: output/cv.pdf
+  file_glob: true
+  file: output/*
   on:
     repo: kylegordon/cv
