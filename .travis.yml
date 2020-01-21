@@ -2,13 +2,15 @@ language: generic
 
 sudo: required
 
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y texlive-latex-recommended texlive-latex-extra latex2html
-  - sudo apt-get install -y build-essential
+services:
+  - docker
 
 script:
-  - make
+  - docker build -t cv -f Dockerfile .
+  - docker cp cv:/tmp/output/cv.pdf ~/output/
+  - docker cp cv:/tmp/output/cv.ps ~/output/
+  - docker cp cv:/tmp/output/cv.dvi ~/output/
+  - docker cp cv:/tmp/output/cv.html ~/output/
 
 deploy:
   provider: releases
