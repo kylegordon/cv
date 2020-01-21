@@ -10,4 +10,4 @@ RUN cd /tmp; make
 RUN ls -l /tmp/output/
 
 FROM build_cv as final_cv
-COPY --from=build_cv /tmp/output/cv.pdf .
+COPY --from=build_cv /tmp/output/ .
