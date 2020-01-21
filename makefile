@@ -1,10 +1,11 @@
 all: 	ps dvi pdf html
 
-ps: 	dvi
+ps:	dvi
 	## Make the PS file
 	dvips output/cv.dvi -o output/cv.ps
 
 dvi:
+	mkdir -p output/
 	latex -halt-on-error -output-directory=output/ cv.tex
 
 pdf:
